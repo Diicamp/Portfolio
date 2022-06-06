@@ -1,0 +1,135 @@
+:root {
+  --font-Baloo: "Baloo Da 2", serif;
+  --font-Josefin: "Josefin Slab", serif;
+  --font-Mulish: "Mulish", serif;
+  --font-Roboto: "Roboto", serif;
+  --font-Ubuntu: "Ubuntu", serif;
+}
+
+:root {
+  --color-1: #000000;
+  --color-2: #4b4b4b;
+  --color-3: #999999;
+  --color-4: #1f14d1;
+  --color-5: #443bd1;
+  --color-6: #5050ec;
+  --color-7: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  scrollbar-width: auto;
+  scrollbar-color: var(--color-5) var(--color-7);
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar {
+  width: 18px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--color-7);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--color-5);
+  border-radius: 10px;
+  border: 3px solid var(--color-7);
+}
+
+.contato,
+.projetos,
+.orcamento {
+  width: 100%;
+  height: auto;
+  background-color: var(--color-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contato-container,
+.projetos-container {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10rem;
+}
+
+.conhecimentos-title,
+.projetos-title,
+.contato-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.conhecimentos-title h1,
+.projetos-title h1,
+.contato-title h1 {
+  font-family: var(--font-Baloo);
+  font-size: 3rem;
+  color: var(--color-2);
+  position: relative;
+}
+.conhecimentos-title h1::after,
+.projetos-title h1:after,
+.contato-title h1:after {
+  position: absolute;
+  content: "";
+  bottom: 3px;
+  width: 100%;
+  height: 4px;
+  background: var(--color-5);
+  transform: translate(-100%);
+  
+}
+
+#topo {
+  position: fixed;
+  right: 3rem;
+  bottom: 3rem;
+  width: 3rem;
+  height: 3rem;
+  background: var(--color-5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-7);
+  border-radius: 4px;
+  box-shadow: 0rem 0.5rem 1rem 0.1rem rgba(0, 0, 0, 0.5);
+
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes moveBanner {
+  0% {
+    transform: translateY(10rem) rotateY(-30deg);
+  }
+  100% {
+    transform: translateY(0) rotateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes moveMenu {
+  0% {
+    display: none;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+

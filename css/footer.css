@@ -1,0 +1,18 @@
+.footer {
+    background: var(--color-1);
+    padding: 3rem;
+    color: var(--color-7);
+    text-align: center;
+}
+
+.footer a {
+    color: var(--color-5);
+}
+
+.footer a:hover {
+    color: var(--color-6);
+}
+
+.footer span {
+   font-size: 1rem; 
+}
